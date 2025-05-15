@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="apply a computer">44c7feeec35922108c7c1933e401319f</cat_item>
+        <cat_item display_value="Apply for a computer for new employees">44c7feeec35922108c7c1933e401319f</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -31,11 +31,11 @@
         <instructions><![CDATA[<p>Tell us what type of computer you want.</p>]]></instructions>
         <layout>normal</layout>
         <list_table/>
-        <lookup_label>name</lookup_label>
+        <lookup_label>display_name</lookup_label>
         <lookup_price/>
-        <lookup_table>cmdb_ci_computer</lookup_table>
+        <lookup_table>alm_hardware</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value>name</lookup_value>
+        <lookup_value>display_name</lookup_value>
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
@@ -57,9 +57,10 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference>cmdb_ci_computer</reference>
+        <reference_qual>model_category=81feb9c137101000deeabfc8bcbe5dc4^install_status=6^substatus=available</reference_qual>
+        <reference_qual_condition table="cmdb_ci_computer">model_category=81feb9c137101000deeabfc8bcbe5dc4^install_status=6^substatus=available<item display_value="In Stock" endquery="false" field="install_status" goto="false" newquery="false" operator="=" or="false" value="6"/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -79,14 +80,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-09 02:43:52</sys_created_on>
         <sys_id>f28204d3c319e2108c7c1933e4013151</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>what type of computer do you prefer?</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>item_option_new_f28204d3c319e2108c7c1933e4013151</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-09 02:46:12</sys_updated_on>
+        <sys_updated_on>2025-05-09 07:47:43</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

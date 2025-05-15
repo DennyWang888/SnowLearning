@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="ab52c76ec39922108c7c1933e401313e" sys_domain="global" table="x_1634320_to_do_to_do_project" version="3" view="workspace-to-do-workspace-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>project</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-07 08:42:30</sys_created_on>
+            <sys_id>6f52c76ec39922108c7c1933e401313f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1634320_to_do_to_do_project" sys_domain="global" view="6852076ef5992210acaae2b3e88e3182">ab52c76ec39922108c7c1933e401313e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-07 08:42:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1634320_to_do_to_do_project</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-07 08:42:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab52c76ec39922108c7c1933e401313e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1634320_to_do_to_do_project</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+            <sys_update_name>sys_ui_section_ab52c76ec39922108c7c1933e401313e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-07 08:42:30</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace To Do Workspace 0" name="workspace-to-do-workspace-0">6852076ef5992210acaae2b3e88e3182</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

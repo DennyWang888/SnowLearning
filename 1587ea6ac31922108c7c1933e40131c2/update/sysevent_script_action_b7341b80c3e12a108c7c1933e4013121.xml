@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1634320_to_do.UpdateHardwareAsset</event_name>
+        <name>UpdateHardwareAsset</name>
+        <order>100</order>
+        <script><![CDATA[var newimp = event.parm1.toString();
+gs.info("user id is" + newimp);
+
+var hwAsset = new GlideRecord('alm_hardware');
+hwAsset.addQuery('asset_tag', 'P1000195');
+hwAsset.query();
+while (hwAsset.next()) {
+  gs.info('Found hardware with asset tag: ' + hwAsset.asset_tag);
+  gs.info('Hardware name: ' + hwAsset.name);
+  hwAsset.install_status = '1';
+  hwAsset.assigned_to = newimp;
+  hwAsset.update();
+}
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 01:52:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7341b80c3e12a108c7c1933e4013121</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>UpdateHardwareAsset</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>sysevent_script_action_b7341b80c3e12a108c7c1933e4013121</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 04:53:11</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
         <inactive>false</inactive>
-        <misc>0</misc>
         <order>200</order>
         <published_ref/>
-        <question display_value="what is laptop?">7dcf7f2ac3dd22108c7c1933e401317b</question>
-        <rec_misc>0</rec_misc>
+        <question display_value="whom will you request laptop for?">7dcf7f2ac3dd22108c7c1933e401317b</question>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-07 13:13:25</sys_created_on>

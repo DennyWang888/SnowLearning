@@ -19,7 +19,7 @@
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
-        <ignore_price>false</ignore_price>
+        <ignore_price>true</ignore_price>
         <image/>
         <location/>
         <make_item_non_conversational>false</make_item_non_conversational>
@@ -48,7 +48,7 @@
         <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
         <picture/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=fd081af2c3d962108c7c1933e401314e&amp;sysparm_preview=true", "summary");</preview>
-        <price>1010</price>
+        <price>0</price>
         <published_ref/>
         <recurring_frequency/>
         <request_method/>
@@ -65,21 +65,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-08 00:15:59</sys_created_on>
         <sys_id>fd081af2c3d962108c7c1933e401314e</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Request a new To Do Project</sys_name>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
         <sys_policy/>
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>sc_cat_item_fd081af2c3d962108c7c1933e401314e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-08 05:33:51</sys_updated_on>
+        <sys_updated_on>2025-05-08 08:37:18</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>25</version>
+        <version>27</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
@@ -88,19 +88,19 @@
     <sys_translated_text action="delete_multiple" query="documentkey=fd081af2c3d962108c7c1933e401314e"/>
     <fx_price action="delete_multiple" query="id=fd081af2c3d962108c7c1933e401314e"/>
     <fx_price action="INSERT_OR_UPDATE">
-        <amount>1010</amount>
+        <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price</field>
         <id>fd081af2c3d962108c7c1933e401314e</id>
         <parent/>
-        <reference_amount>1010</reference_amount>
+        <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-08 00:15:59</sys_created_on>
         <sys_id>bd081af2c3d962108c7c1933e4013153</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-08 04:16:32</sys_updated_on>
+        <sys_updated_on>2025-05-08 08:37:18</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>

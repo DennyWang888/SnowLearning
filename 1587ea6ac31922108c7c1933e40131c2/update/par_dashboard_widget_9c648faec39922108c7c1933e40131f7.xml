@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">fb520b6ec39922108c7c1933e4013129</canvas>
+        <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
+        <component_props>{"columns":"asset_tag,model_category,model.display_name,assigned_to,company,install_status,substatus,cost,ci","fixedQuery":"assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe","groupByField":"","hideColumnFiltering":false,"hideColumnGrouping":false,"hideColumnReorder":false,"hideColumnResizing":false,"hideColumnSorting":false,"hideDotwalk":false,"hideEmptyStateImage":false,"hideHeader":false,"hideHighlightContent":false,"hideHighlightedValues":false,"hideInlineEditing":false,"hideLastRefreshedText":false,"hideLinks":false,"hidePersonalization":false,"hideRefreshButton":false,"hideRowSelector":false,"hideTitle":false,"hideTitleRowCount":false,"hideViewAll":false,"highlightContent":{"color":"","patterns":[]},"highlightedValueConfigId":"","limit":20,"listTitle":"Assets assigned to me","maxCharLimit":4000,"maxColumns":9,"overrideWordWrapUserPref":false,"query":"","table":"alm_asset","wordWrap":false,"noDebounce":"","isDashboard":true}</component_props>
+        <h>13</h>
+        <name>Assets Assigned to me</name>
+        <stored_component display_value="Assets Assigned to me">593eea617740021033d370607b5a990e</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-07 08:51:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c648faec39922108c7c1933e40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assets Assigned to me</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>par_dashboard_widget_9c648faec39922108c7c1933e40131f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-07 08:51:17</sys_updated_on>
+        <visualization/>
+        <w>49</w>
+        <widget_props/>
+        <x>0</x>
+        <y>30</y>
+    </par_dashboard_widget>
+</record_update>
