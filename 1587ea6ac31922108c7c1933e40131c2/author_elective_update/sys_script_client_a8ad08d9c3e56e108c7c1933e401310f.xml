@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>updateTodoRecord</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+alert('aaaaaaaaaaa');
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 08:57:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8ad08d9c3e56e108c7c1933e401310f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>updateTodoRecord</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>sys_script_client_a8ad08d9c3e56e108c7c1933e401310f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 00:41:32</sys_updated_on>
+        <table>x_1634320_to_do_to_do</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="To Do">1587ea6ac31922108c7c1933e40131c2</application>
+        <file_path/>
+        <instance_id>63f8880a1b7e31909377eb9b2d4bcb92</instance_id>
+        <instance_name>dev229358</instance_name>
+        <name>sys_script_client_a8ad08d9c3e56e108c7c1933e401310f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;updateTodoRecord&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+alert('aaaaaaaaaaa');
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-15 08:57:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a8ad08d9c3e56e108c7c1933e401310f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;updateTodoRecord&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="To Do" source="x_1634320_to_do"&gt;1587ea6ac31922108c7c1933e40131c2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="To Do"&gt;1587ea6ac31922108c7c1933e40131c2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a8ad08d9c3e56e108c7c1933e401310f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-16 00:41:32&lt;/sys_updated_on&gt;&lt;table&gt;x_1634320_to_do_to_do&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-13002037</payload_hash>
+        <record_name>updateTodoRecord</record_name>
+        <reverted_from/>
+        <source>06bd1a81c3ad2e108c7c1933e40131b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 00:41:32</sys_created_on>
+        <sys_id>069a6319c329ae108c7c1933e40131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196d68a09030000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 00:41:32</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>8a9a63195b29ae100d59b12caef79f9f</update_guid>
+        <update_guid_history>8a9a63195b29ae100d59b12caef79f9f:-13002037,d14ae3d5e229ae10ffd65fde386e3ad7:209125496,7b72d8997be56e1025ec509247c3e590:-13002037</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 00:48:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>038e3de9f40748d882ed935e29986840</sys_id>
+        <sys_metadata>a8ad08d9c3e56e108c7c1933e401310f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>updateTodoRecord</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_parent display_value="To Do To Do">f67862eac31922108c7c1933e40131a0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_scope_delete display_value="">0735545191714afca8a650b42c52a884</sys_scope_delete>
+        <sys_update_name>sys_script_client_a8ad08d9c3e56e108c7c1933e401310f</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a8ad08d9c3e56e108c7c1933e401310f">069a6319c329ae108c7c1933e40131a0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 00:48:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_footer</name>
+        <page display_value="Todo experience">99442ac9c3ad2e108c7c1933e40131c5</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 00:55:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>3244eec1c3ed2e108c7c1933e401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>sys_ux_page_property_3244eec1c3ed2e108c7c1933e401311f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-15 00:55:55</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1634320_to_do.99442ac9c3ad2e108c7c1933e40131c5.root.global.chrome_footer</unique_name>
+        <value>{
+    "public_page": {
+        "enable_footer_topbar": false,
+        "footer_topbar_options": {},
+        "enable_footer_bar": false,
+        "footer_bar_options": {}
+    }
+}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=3244eec1c3ed2e108c7c1933e401311f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="To Do">1587ea6ac31922108c7c1933e40131c2</application>
+        <file_path/>
+        <instance_id>63f8880a1b7e31909377eb9b2d4bcb92</instance_id>
+        <instance_name>dev229358</instance_name>
+        <name>sys_ux_page_property_3244eec1c3ed2e108c7c1933e401311f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_footer</name><page display_value="Todo experience">99442ac9c3ad2e108c7c1933e40131c5</page><required_translations>[ ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-15 00:55:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>3244eec1c3ed2e108c7c1933e401311f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_footer</sys_name><sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package><sys_policy/><sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope><sys_update_name>sys_ux_page_property_3244eec1c3ed2e108c7c1933e401311f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-15 00:55:55</sys_updated_on><type>json</type><unique_name>x_1634320_to_do.99442ac9c3ad2e108c7c1933e40131c5.root.global.chrome_footer</unique_name><value>{
+    "public_page": {
+        "enable_footer_topbar": false,
+        "footer_topbar_options": {},
+        "enable_footer_bar": false,
+        "footer_bar_options": {}
+    }
+}</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=3244eec1c3ed2e108c7c1933e401311f"/></record_update>]]></payload>
+        <payload_hash>-855660237</payload_hash>
+        <record_name>chrome_footer</record_name>
+        <reverted_from/>
+        <source>06bd1a81c3ad2e108c7c1933e40131b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 00:55:55</sys_created_on>
+        <sys_id>f244eec1c3ed2e108c7c1933e4013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196d170d6980000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-15 00:55:55</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>f644eec18fed2e10bc1d5f5c3a03dd20</update_guid>
+        <update_guid_history>f644eec18fed2e10bc1d5f5c3a03dd20:-855660237</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 02:50:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>42ae53feffea4456b8aa9b4504c70404</sys_id>
+        <sys_metadata>3244eec1c3ed2e108c7c1933e401311f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_scope_delete display_value="">0735545191714afca8a650b42c52a884</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_3244eec1c3ed2e108c7c1933e401311f</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_3244eec1c3ed2e108c7c1933e401311f">f244eec1c3ed2e108c7c1933e4013121</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-15 02:50:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

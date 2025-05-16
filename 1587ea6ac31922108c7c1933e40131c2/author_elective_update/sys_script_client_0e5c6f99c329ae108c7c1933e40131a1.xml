@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>updateTodoRecord</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+    var dialog = new GlideDialogWindow('MyUIPage'); //Mention your UI Page name here
+    dialog.setTitle('UI Page Demo'); //Set the dialog title
+    dialog.setSize(650, 600); //Set the dialog size
+    //dialog.setPreference('sys_id', g_form.getUniqueValue()); //pass current object id
+    //dialog.setPreference('value',newValue);//pass the selected value on the form	
+    dialog.render(); //Open the dialog   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 00:49:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e5c6f99c329ae108c7c1933e40131a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>updateTodoRecord</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>sys_script_client_0e5c6f99c329ae108c7c1933e40131a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 06:30:10</sys_updated_on>
+        <table>x_1634320_to_do_to_do</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="To Do">1587ea6ac31922108c7c1933e40131c2</application>
+        <file_path/>
+        <instance_id>63f8880a1b7e31909377eb9b2d4bcb92</instance_id>
+        <instance_name>dev229358</instance_name>
+        <name>sys_script_client_0e5c6f99c329ae108c7c1933e40131a1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;false&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;updateTodoRecord&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+    var dialog = new GlideDialogWindow('MyUIPage'); //Mention your UI Page name here
+    dialog.setTitle('UI Page Demo'); //Set the dialog title
+    dialog.setSize(650, 600); //Set the dialog size
+    //dialog.setPreference('sys_id', g_form.getUniqueValue()); //pass current object id
+    //dialog.setPreference('value',newValue);//pass the selected value on the form	
+    dialog.render(); //Open the dialog   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-16 00:49:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0e5c6f99c329ae108c7c1933e40131a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;updateTodoRecord&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="To Do" source="x_1634320_to_do"&gt;1587ea6ac31922108c7c1933e40131c2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="To Do"&gt;1587ea6ac31922108c7c1933e40131c2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_0e5c6f99c329ae108c7c1933e40131a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-16 06:30:10&lt;/sys_updated_on&gt;&lt;table&gt;x_1634320_to_do_to_do&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1890512242</payload_hash>
+        <record_name>updateTodoRecord</record_name>
+        <reverted_from/>
+        <source>06bd1a81c3ad2e108c7c1933e40131b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 06:30:10</sys_created_on>
+        <sys_id>496ab82dc3adae108c7c1933e401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196d7c937080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 06:30:10</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>cd6ab82de9adae10e7ccce9c33d85729</update_guid>
+        <update_guid_history>cd6ab82de9adae10e7ccce9c33d85729:1890512242,bc8c63d9c929ae104aa9886065fde808:270044487</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 06:33:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3797a7b548ff4cb4b568287bf2e3d490</sys_id>
+        <sys_metadata>0e5c6f99c329ae108c7c1933e40131a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>updateTodoRecord</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_parent display_value="To Do To Do">f67862eac31922108c7c1933e40131a0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_scope_delete display_value="">0735545191714afca8a650b42c52a884</sys_scope_delete>
+        <sys_update_name>sys_script_client_0e5c6f99c329ae108c7c1933e40131a1</sys_update_name>
+        <sys_update_version display_value="sys_script_client_0e5c6f99c329ae108c7c1933e40131a1">496ab82dc3adae108c7c1933e401312a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 06:33:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

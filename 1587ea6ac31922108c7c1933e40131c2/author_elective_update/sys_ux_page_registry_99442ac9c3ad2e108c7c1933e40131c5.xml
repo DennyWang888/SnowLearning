@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="DELETE">
+        <active>true</active>
+        <admin_panel>9d442ac9c3ad2e108c7c1933e40131c1</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app>
+        <path>todo-experience</path>
+        <root_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 00:55:48</sys_created_on>
+        <sys_id>99442ac9c3ad2e108c7c1933e40131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Todo experience</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>sys_ux_page_registry_99442ac9c3ad2e108c7c1933e40131c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-15 00:55:48</sys_updated_on>
+        <title>Todo experience</title>
+    </sys_ux_page_registry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="To Do">1587ea6ac31922108c7c1933e40131c2</application>
+        <file_path/>
+        <instance_id>63f8880a1b7e31909377eb9b2d4bcb92</instance_id>
+        <instance_name>dev229358</instance_name>
+        <name>sys_ux_page_registry_99442ac9c3ad2e108c7c1933e40131c5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry"><sys_ux_page_registry action="INSERT_OR_UPDATE"><active>true</active><admin_panel>9d442ac9c3ad2e108c7c1933e40131c1</admin_panel><admin_panel_table>sys_ux_app_config</admin_panel_table><auth_routes/><page/><parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app><path>todo-experience</path><root_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</root_macroponent><sys_class_name>sys_ux_page_registry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-15 00:55:48</sys_created_on><sys_id>99442ac9c3ad2e108c7c1933e40131c5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Todo experience</sys_name><sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package><sys_policy/><sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope><sys_update_name>sys_ux_page_registry_99442ac9c3ad2e108c7c1933e40131c5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-15 00:55:48</sys_updated_on><title>Todo experience</title></sys_ux_page_registry></record_update>]]></payload>
+        <payload_hash>-1169133646</payload_hash>
+        <record_name>Todo experience</record_name>
+        <reverted_from/>
+        <source>06bd1a81c3ad2e108c7c1933e40131b8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 00:55:48</sys_created_on>
+        <sys_id>9144aec1c3ed2e108c7c1933e401318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196d170bd740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-15 00:55:48</sys_updated_on>
+        <type>UX Application</type>
+        <update_guid>dd442ac917ad2e10580f395fe703edc8</update_guid>
+        <update_guid_history>dd442ac917ad2e10580f395fe703edc8:-1169133646</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-15 02:50:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_registry">sys_ux_page_registry</sys_db_object>
+        <sys_id>151cd76c56604a30bcceb0f34091dbe4</sys_id>
+        <sys_metadata>99442ac9c3ad2e108c7c1933e40131c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Todo experience</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_scope_delete display_value="">0735545191714afca8a650b42c52a884</sys_scope_delete>
+        <sys_update_name>sys_ux_page_registry_99442ac9c3ad2e108c7c1933e40131c5</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_registry_99442ac9c3ad2e108c7c1933e40131c5">9144aec1c3ed2e108c7c1933e401318a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-15 02:50:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
