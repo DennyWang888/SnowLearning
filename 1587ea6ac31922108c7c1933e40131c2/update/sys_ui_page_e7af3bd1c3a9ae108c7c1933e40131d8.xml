@@ -5,18 +5,21 @@
     alert("OK clicked");
 	
     var gdw = GlideDialogWindow.get();
-	//var name =gel('my_name').value;
+	var to_do_item =gel('to_do_item').value;
 	//var user = gel('user_ref').value;
 	//var cat = gel('my_category').value;
 	var sys_id = gdw.getPreference('sys_id'); //get the values passed in the client script 
 	//var selected_value = gdw.getPreference('value'); //get the values passed in the client script 
 	//alert(name+"---"+user+"---"+cat+"---"+sys_id+"---"+selected_value);
 	alert(sys_id);
+	alert(to_do_item);
 	GlideDialogWindow.get().destroy();
 
     var ga = new GlideAjax('HelloWorld');
     ga.addParam('sysparm_name', 'helloWorld');
-    ga.addParam('sysparm_user_name', document.getElementById('my_name').value);
+    //ga.addParam('sysparm_user_name', document.getElementById('my_name').value);
+	ga.addParam('sysparm_sys_id', sys_id);
+	ga.addParam('sysparm_to_do_item', to_do_item);
     ga.getXML(HelloWorldParse);
 
     function HelloWorldParse(response) {
@@ -39,11 +42,11 @@ function continueCancel() {
             <tr>
                 <td style="width:25%">
                     <g:form_label>
-                        Name:
+                        To Do Item:
                     </g:form_label>
                 </td>
                 <td style="width:60%">
-                    <input type="text" aria-label="Print your name" name="my_name" id="my_name" maxlength="25" />
+                    <input type="text" aria-label="Print your name" name="to_do_item" id="to_do_item" maxlength="25" />
                 </td>
             </tr>
             <tr>
@@ -80,13 +83,13 @@ function continueCancel() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-16 02:24:23</sys_created_on>
         <sys_id>e7af3bd1c3a9ae108c7c1933e40131d8</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>MyUIPage</sys_name>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
         <sys_policy/>
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>sys_ui_page_e7af3bd1c3a9ae108c7c1933e40131d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-16 08:27:07</sys_updated_on>
+        <sys_updated_on>2025-05-16 13:56:08</sys_updated_on>
     </sys_ui_page>
 </record_update>

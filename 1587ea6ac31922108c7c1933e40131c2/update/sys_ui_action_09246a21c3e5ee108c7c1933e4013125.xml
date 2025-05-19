@@ -17,7 +17,7 @@
         <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
-        <isolate_script>false</isolate_script>
+        <isolate_script>true</isolate_script>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
@@ -27,18 +27,23 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>ActionForTodo</name>
-        <onclick>commentsDialog()</onclick>
-        <order>100</order>
-        <script><![CDATA[function commentsDialog() {
-//alert('mmmmmmmmmmmmmmmm');
+        <name>CreatePdfForTodo</name>
+        <onclick>createPDF()</onclick>
+        <order>200</order>
+        <script><![CDATA[function createPDF() {
 
-var dialog = new GlideDialogWindow('x_1634320_to_do_MyUIPage'); //Mention your UI Page name here
-    dialog.setTitle('UI Page Demo'); //Set the dialog title
-    dialog.setSize(950, 900); //Set the dialog size
-    dialog.setPreference('sys_id', g_form.getUniqueValue()); //pass current object id
-    //dialog.setPreference('value',newValue);//pass the selected value on the form	
-    dialog.render(); //Open the dialog   
+    //var sysparm_table = g_form.getTableName();
+	//alert(sysparm_table);
+    //var sysparm_sys_id = g_form.getUniqueValue().toString();
+	//alert(sysparm_sys_id);
+
+    //var a = 'https://dev229358.service-now.com/';
+    //var url = a + sysparm_table + '.do?PDF&sys_id=' + sysparm_sys_id + '&sysparm_view=Default';
+	//alert(url);
+
+    //window.open(url, "_self");
+	var uri = g_form.getTableName() + '.do?sys_id=' + g_form.getUniqueValue() + '&PDF';
+	g_navigation.open(uri);
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -46,19 +51,19 @@ var dialog = new GlideDialogWindow('x_1634320_to_do_MyUIPage'); //Mention your U
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-16 01:14:25</sys_created_on>
+        <sys_created_on>2025-05-16 14:14:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>73317751c369ae108c7c1933e4013112</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>ActionForTodo</sys_name>
+        <sys_id>09246a21c3e5ee108c7c1933e4013125</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>CreatePdfForTodo</sys_name>
         <sys_overrides/>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
         <sys_policy/>
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
-        <sys_update_name>sys_ui_action_73317751c369ae108c7c1933e4013112</sys_update_name>
+        <sys_update_name>sys_ui_action_09246a21c3e5ee108c7c1933e4013125</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-16 14:07:21</sys_updated_on>
+        <sys_updated_on>2025-05-17 07:55:47</sys_updated_on>
         <table>x_1634320_to_do_to_do</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
