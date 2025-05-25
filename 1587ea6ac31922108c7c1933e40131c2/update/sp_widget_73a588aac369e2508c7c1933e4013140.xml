@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, spUtil) {
+    
+  var c = this;
+
+    c.model = {};
+    
+    c.hoursToSubmit = [];
+    
+    /* 
+        read the file
+        the function get the attached file as a blob
+        https://developer.mozilla.org/en-US/docs/Web/API/Blob
+    */
+    $scope.readAttachment = function(blob) {
+
+        //check if the file is XLS or XLSX
+        var isXLSX = blob.name.endsWith('.xlsx') || blob.name.endsWith('.xls');
+
+        // If not an Excel file the function fails
+        if (!isXLSX) {
+            spUtil.addErrorMessage("The file must be .xlxs or .xls");
+            //c.removeAttachment();
+            return;
+        }
+
+        c.fileName = blob.name;
+
+        /* star the reader */
+        var myReader = new FileReader();
+
+			
+        /* function that will be executed when the reader is called    */
+        myReader.onload = function(e) {
+
+            var data = e.target.result;
+
+            /* get the workbook */
+            var workbook = XLSX.read(data, {
+                type: "binary"
+            });
+            var o = {};
+
+            /* get the first sheet name */
+            var name = workbook.SheetNames[0];
+					
+            /* obtain the JSON object of the sheet and stringify */
+            //var work_hours = XLSX.utils.sheet_to_json(workbook.Sheets[name], {header: "A"});
+						var work_hours = XLSX.utils.sheet_to_json(workbook.Sheets[name]);
+
+            /* remove the first line (columns titles) using Lodash*/
+            //work_hours = _.drop(work_hours, 1);
+					
+						var g_form = $scope.page.g_form;
+
+						//var mrvsvalue = g_form.getValue('mrvs_for_to_do');
+						//alert('mrvsvalue is ' + mrvsvalue);
+					
+						g_form.setValue('mrvs_for_to_do', JSON.stringify(work_hours));
+					
+            if (work_hours.length == 0) {
+
+                spUtil.addErrorMessage("Nothing to import!");
+                //c.removeAttachment();
+                return;
+
+            } else {
+
+                /* For this article we will not do any type of validation */
+                c.hoursToSubmit = work_hours;
+                return;
+
+            }
+
+        }
+
+        /* stars the reader */
+        myReader.readAsBinaryString(blob);
+    }
+    
+    c.submitFile = function() {
+                
+        $scope.server.get({
+            action: "insert-hours",
+            monthYear: c.model.monthYear,
+            department: c.model.department,
+            hoursToSubmit: c.hoursToSubmit
+        }).then(function(resp) {
+            
+            spUtil.addInfoMessage("Sucess! Good job!! :)");
+            c.hoursToSubmit = [];
+            c.model = {};
+            //c.removeAttachment();
+            
+        });
+        
+    }
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>my_new_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>My New Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 05:13:49</sys_created_on>
+        <sys_id>73a588aac369e2508c7c1933e4013140</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>My New Widget</sys_name>
+        <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
+        <sys_update_name>sp_widget_73a588aac369e2508c7c1933e4013140</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:42:22</sys_updated_on>
+        <template><![CDATA[<form ng-submit="c.submitFile()" name="form" id="my-form">
+
+  <fieldset class="form-row">
+
+    <div class="h1">
+      
+      <!-- Field Period -->
+
+      <p>Click this button to upload xls file and fill in the MRVS.</p>
+
+
+    </div>
+    
+
+    
+    <div class="form-group col-md-3">
+      
+      <!-- Input file -->
+      <!--label for="attachment" class="btn btn-block btn-primary" ng-hide="c.haveAttachment">
+        <span class="glyphicon glyphicon-paperclip"></span> Attach File
+      </label>
+      
+      <div ng-show="c.haveAttachment" class="file-attached">
+        {{c.fileName}} <a id="clear" href="" ng-click="c.removeAttachment()">
+        <span class="glyphicon glyphicon-remove"></span></a>
+      </div>-->
+      
+      <input type="file" name="attachment" id="attachment" accept=".xls,.xlsx" 
+             onchange="angular.element(this).scope().readAttachment(angular.element(this)[0].files[0])"  
+             >
+    </div>
+    
+    <!--div class="form-group col-md-3">
+      
+      <!-- Buttom submit 
+      <button type="submit" id="submit" class="btn submit-btn btn-block btn-primary">Submit</button>
+      
+    </div>-->
+    
+  </fieldset>
+  
+</form>]]></template>
+    </sp_widget>
+</record_update>
