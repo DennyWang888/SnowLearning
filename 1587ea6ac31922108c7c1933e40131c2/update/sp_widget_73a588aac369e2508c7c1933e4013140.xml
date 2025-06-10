@@ -60,7 +60,7 @@
 					
 						g_form.setValue('mrvs_for_to_do', JSON.stringify(work_hours));
 					
-            if (work_hours.length == 0) {
+            /*if (work_hours.length == 0) {
 
                 spUtil.addErrorMessage("Nothing to import!");
                 //c.removeAttachment();
@@ -68,11 +68,11 @@
 
             } else {
 
-                /* For this article we will not do any type of validation */
-                c.hoursToSubmit = work_hours;
+                /* For this article we will not do any type of validation 
+                //c.hoursToSubmit = work_hours;
                 return;
 
-            }
+            }*/
 
         }
 
@@ -80,7 +80,7 @@
         myReader.readAsBinaryString(blob);
     }
     
-    c.submitFile = function() {
+    /*c.submitFile = function() {
                 
         $scope.server.get({
             action: "insert-hours",
@@ -96,7 +96,7 @@
             
         });
         
-    }
+    }*/
 
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -120,15 +120,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-19 05:13:49</sys_created_on>
         <sys_id>73a588aac369e2508c7c1933e4013140</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>My New Widget</sys_name>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
         <sys_policy/>
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>sp_widget_73a588aac369e2508c7c1933e4013140</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-19 07:42:22</sys_updated_on>
-        <template><![CDATA[<form ng-submit="c.submitFile()" name="form" id="my-form">
+        <sys_updated_on>2025-05-25 04:34:42</sys_updated_on>
+        <template><![CDATA[<form  name="form" id="my-form">
 
   <fieldset class="form-row">
 
@@ -146,26 +146,20 @@
     <div class="form-group col-md-3">
       
       <!-- Input file -->
-      <!--label for="attachment" class="btn btn-block btn-primary" ng-hide="c.haveAttachment">
+      <label for="attachment" class="btn btn-block btn-primary" ng-hide="c.haveAttachment">
         <span class="glyphicon glyphicon-paperclip"></span> Attach File
       </label>
       
       <div ng-show="c.haveAttachment" class="file-attached">
         {{c.fileName}} <a id="clear" href="" ng-click="c.removeAttachment()">
         <span class="glyphicon glyphicon-remove"></span></a>
-      </div>-->
+      </div>
       
       <input type="file" name="attachment" id="attachment" accept=".xls,.xlsx" 
              onchange="angular.element(this).scope().readAttachment(angular.element(this)[0].files[0])"  
              >
     </div>
     
-    <!--div class="form-group col-md-3">
-      
-      <!-- Buttom submit 
-      <button type="submit" id="submit" class="btn submit-btn btn-block btn-primary">Submit</button>
-      
-    </div>-->
     
   </fieldset>
   

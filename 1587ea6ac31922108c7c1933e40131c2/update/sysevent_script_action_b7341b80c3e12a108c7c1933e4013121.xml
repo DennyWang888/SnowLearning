@@ -7,10 +7,21 @@
         <name>UpdateHardwareAsset</name>
         <order>100</order>
         <script><![CDATA[var newimp = event.parm1.toString();
-gs.info("user id is" + newimp);
+gs.info("user id is " + newimp);
+
+var req_item = new GlideRecord('sc_req_item');
+req_item.addQuery('requested_for', newimp);
+req_item.query();
+
+while (req_item.next()) {
+  //gs.addInfoMessage('Found hardware with asset tag: ' + req_item.asset_tag);
+  //gs.addInfoMessage('Hardware name: ' + req_item.name);
+  gs.info(req_item.number + ': ' + getVariableResponse(req_item).substring(0,8));
+}
+
 
 var hwAsset = new GlideRecord('alm_hardware');
-hwAsset.addQuery('asset_tag', 'P1000195');
+hwAsset.addQuery('asset_tag', getVariableResponse(req_item).substring(0,8));
 hwAsset.query();
 while (hwAsset.next()) {
   gs.info('Found hardware with asset tag: ' + hwAsset.asset_tag);
@@ -19,7 +30,23 @@ while (hwAsset.next()) {
   hwAsset.assigned_to = newimp;
   hwAsset.update();
 }
-]]></script>
+
+function getVariableResponse(ritmGr) {
+    var listPC;
+    var scOptionGr = new GlideRecord('sc_item_option_mtom');
+    scOptionGr.addEncodedQuery('request_item=' + ritmGr.sys_id);
+    scOptionGr.query();
+    while(scOptionGr.next()) {
+        //list.push('Question: ' + scOptionGr.sc_item_option.item_option_new.getDisplayValue() + '\tQuestion Sys ID: ' + scOptionGr.sc_item_option.item_option_new + '\tValue: ' + scOptionGr.sc_item_option.value);
+		var question = scOptionGr.sc_item_option.item_option_new.getDisplayValue();
+		if (question != 'what type of computer do you prefer?') {
+			continue;
+		}
+		listPC = scOptionGr.sc_item_option.value;
+		break;
+    }
+    return listPC;
+}]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -27,7 +54,7 @@ while (hwAsset.next()) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b7341b80c3e12a108c7c1933e4013121</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>UpdateHardwareAsset</sys_name>
         <sys_overrides/>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
@@ -35,6 +62,6 @@ while (hwAsset.next()) {
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>sysevent_script_action_b7341b80c3e12a108c7c1933e4013121</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-12 04:53:11</sys_updated_on>
+        <sys_updated_on>2025-05-26 01:09:53</sys_updated_on>
     </sysevent_script_action>
 </record_update>

@@ -2,27 +2,21 @@
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
         <client_script><![CDATA[function continueOK() {
-    alert("OK clicked");
-	
+
     var gdw = GlideDialogWindow.get();
 	var to_do_item =gel('to_do_item').value;
-	//var user = gel('user_ref').value;
-	//var cat = gel('my_category').value;
-	var sys_id = gdw.getPreference('sys_id'); //get the values passed in the client script 
-	//var selected_value = gdw.getPreference('value'); //get the values passed in the client script 
-	//alert(name+"---"+user+"---"+cat+"---"+sys_id+"---"+selected_value);
-	alert(sys_id);
-	alert(to_do_item);
+	//get the values passed in the client script 
+	var sys_id = gdw.getPreference('sys_id'); 
 	GlideDialogWindow.get().destroy();
 
-    var ga = new GlideAjax('HelloWorld');
-    ga.addParam('sysparm_name', 'helloWorld');
-    //ga.addParam('sysparm_user_name', document.getElementById('my_name').value);
+	//call ajax
+    var ga = new GlideAjax('UpdateToDo');
+    ga.addParam('sysparm_name', 'updateToDo');
 	ga.addParam('sysparm_sys_id', sys_id);
 	ga.addParam('sysparm_to_do_item', to_do_item);
-    ga.getXML(HelloWorldParse);
+    ga.getXML(UpdateToDoParse);
 
-    function HelloWorldParse(response) {
+    function UpdateToDoParse(response) {
         var answer = response.responseXML.documentElement.getAttribute("answer");
         alert(answer);
     }
@@ -46,29 +40,10 @@ function continueCancel() {
                     </g:form_label>
                 </td>
                 <td style="width:60%">
-                    <input type="text" aria-label="Print your name" name="to_do_item" id="to_do_item" maxlength="25" />
+                    <input type="text" aria-label="to do item" name="to_do_item" id="to_do_item" maxlength="25" />
                 </td>
             </tr>
-            <tr>
-                <td style="width:25%">
-                    <g:form_label>
-                        Select User:
-                    </g:form_label>
-                </td>
-                <td style="width:60%">
-                    <g:ui_reference name="user_ref" id="user_ref" query="user_nameSTARTSWITHa" table="sys_user" />
-                </td>
-            </tr>
-            <tr>
-                <td style="width:25%">
-                    <g:form_label>
-                        Select Incident:
-                    </g:form_label>
-                </td>
-                <td style="width:60%">
-                    <g:ui_choicelist name="my_category" id="my_category" table="incident" mandatory="true" field="category" query="active=true" />
-                </td>
-            </tr>
+            
             <tr>
                 <td>
                     <g:dialog_buttons_ok_cancel ok_id="submitData" ok="return continueOK()" ok_type="button" ok_text="${gs.getMessage('Okay')}" ok_style_class="btn btn-primary" cancel_type="button" cancel_id="cancelData" cancel_style_class="btn btn-default" cancel="return continueCancel()" />
@@ -83,13 +58,13 @@ function continueCancel() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-16 02:24:23</sys_created_on>
         <sys_id>e7af3bd1c3a9ae108c7c1933e40131d8</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>MyUIPage</sys_name>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
         <sys_policy/>
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>sys_ui_page_e7af3bd1c3a9ae108c7c1933e40131d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-16 13:56:08</sys_updated_on>
+        <sys_updated_on>2025-06-04 00:45:14</sys_updated_on>
     </sys_ui_page>
 </record_update>
