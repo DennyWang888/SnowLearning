@@ -28,22 +28,14 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous) {
-    // Get the manager of the caller
-	gs.info('current.user is ' + current.user);
-    var caller = current.user.getRefRecord();
-
-	gs.info("********caller is " + caller);
-	
+    // Get the manager of the requester
+    var caller = current.opened_by.getRefRecord();
     var manager = caller.getValue('manager');
-	gs.info('********manager is ' + manager);
-
-    // Add the manager to the watchlist if they are not already there
-    if (manager && !current.watch_list.includes(manager.getDisplayValue())) { // Use includes for a more efficient string check
-        if (current.watch_list == "") {
-            current.watch_list = manager;
-        } else {
-            current.watch_list += "," + manager;
-        }
+    
+    if (current.watch_list == "") {
+        current.watch_list = manager;
+    } else {
+        current.watch_list += "," + manager;
     }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -52,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>72b07c62c36de2508c7c1933e40131d3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>add manager to watch list</sys_name>
         <sys_overrides/>
         <sys_package display_value="To Do" source="x_1634320_to_do">1587ea6ac31922108c7c1933e40131c2</sys_package>
@@ -60,9 +52,9 @@
         <sys_scope display_value="To Do">1587ea6ac31922108c7c1933e40131c2</sys_scope>
         <sys_update_name>sys_script_72b07c62c36de2508c7c1933e40131d3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-19 09:04:33</sys_updated_on>
+        <sys_updated_on>2025-06-12 04:25:59</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=72b07c62c36de2508c7c1933e40131d3"/>
 </record_update>
